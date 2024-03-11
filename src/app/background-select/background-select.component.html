@@ -1,0 +1,11 @@
+<label for="background">Background : </label>
+<select formControlName="background">
+    <option>-</option>
+    @for (background of backgrounds; track background.name) {
+        <option value="{{ background.name }}">{{ background.name }}</option>
+    }
+</select>
+
+<p></p>
+
+

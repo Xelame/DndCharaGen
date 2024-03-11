@@ -1,0 +1,14 @@
+<form [formGroup]="applyForm">
+    <label for="charaterName">Character Name : </label>
+    <input type="text" formControlName="charaterName"/>
+    <p></p>
+    <app-classes-select></app-classes-select>
+    <app-species-select></app-species-select>
+    <app-background-select></app-background-select>
+    <app-alignment-select></app-alignment-select>
+    <label for="playerName">Player Name : </label>
+    <input type="text" formControlName="playerName"/>
+    <p></p>
+    
+    <button type="submit" (click)="submitForm()">Submit</button>
+</form>

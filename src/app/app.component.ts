@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SelectButtonComponent } from '../SelectButton/SelectButton.component';
+import { BaseInfoFormComponent } from './base-info-form/base-info-form.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SelectButtonComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, BaseInfoFormComponent],
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'app';
 }
