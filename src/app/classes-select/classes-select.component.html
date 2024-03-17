@@ -1,11 +1,7 @@
-<label for="class">Class : </label>
-<select formControlName="class">
+<label for="class" class="form-label">Class</label>
+<select id="class" class="form-select" formControlName="class">
     <option>-</option>
     @for (classe of classes; track classe.name) {
-        <option value="{{ classe.name }}">{{ classe.name }}</option>
+    <option value="{{ classe.name }}">{{ classe.name }}</option>
     }
 </select>
-
-<p></p>
-
-

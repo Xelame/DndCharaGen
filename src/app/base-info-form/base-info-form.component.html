@@ -1,14 +1,27 @@
-<form [formGroup]="applyForm">
-    <label for="charaterName">Character Name : </label>
-    <input type="text" formControlName="charaterName"/>
-    <p></p>
-    <app-classes-select></app-classes-select>
-    <app-species-select></app-species-select>
-    <app-background-select></app-background-select>
-    <app-alignment-select></app-alignment-select>
-    <label for="playerName">Player Name : </label>
-    <input type="text" formControlName="playerName"/>
-    <p></p>
-    
-    <button type="submit" (click)="submitForm()">Submit</button>
-</form>
+<div class="card m-auto">
+    <div class="card-body">
+        <form [formGroup]="applyForm" (change)="onSelectionChange($event)">
+            <div class="mb-3">
+                <label for="charaterName" class="form-label">Character Name</label>
+                <input type="text" class="form-control" formControlName="charaterName"/>
+            </div>
+            <div class="mb-3">
+                <app-classes-select></app-classes-select>
+            </div>
+            <div class="mb-3">
+                <app-species-select></app-species-select>
+            </div>
+            <div class="mb-3">
+                <app-background-select></app-background-select>
+            </div>
+            <div class="mb-3">
+                <app-alignment-select></app-alignment-select>
+            </div>
+            <div class="mb-3">
+                <label for="playerName" class="form-label">Player Name</label>
+                <input type="text" class="form-control" formControlName="playerName"/>
+            </div>
+            <button type="submit" class="btn btn-success" (click)="submitForm()" [disabled]="!applyForm.valid">Submit</button>
+        </form>
+    </div>
+</div>

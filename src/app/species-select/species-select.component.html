@@ -1,9 +1,7 @@
-<label for="specie">Specie : </label>
-<select formControlName="specie">
+<label for="specie" class="form-label">Specie</label>
+<select id="specie" class="form-select" formControlName="specie">
     <option>-</option>
     @for (specie of species; track specie.name) {
         <option value="{{ specie.name }}">{{ specie.name }}</option>
     }
 </select>
-
-<p></p>

@@ -1,0 +1,17 @@
+<div class="card" style="width: 24rem">
+    <img src="https://api.dicebear.com/8.x/adventurer/jpg?seed={{ charaterName }}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ charaterName }}</h5>
+        <p class="card-text">Level : 1 & Experience : 0</p>
+        <p class="card-text">Race : </p>
+        <p class="card-text">History : </p>
+        <p class="card-text">Alignement : </p>
+        <p class="card-text">Strength : {{ strength }} ({{characteristicToModifier(strength)}})</p>
+        <p class="card-text">Dexterity : {{ dexterity }} ({{characteristicToModifier(dexterity)}})</p>
+        <p class="card-text">Constitution : {{ constitution }} ({{characteristicToModifier(constitution)}})</p>
+        <p class="card-text">Intelligence : {{ intelligence }} ({{characteristicToModifier(intelligence)}})</p>
+        <p class="card-text">Wisdom : {{ wisdom }} ({{characteristicToModifier(wisdom)}})</p>
+        <p class="card-text">Charisma : {{ charisma }} ({{characteristicToModifier(charisma)}})</p>
+        <p class="card-text">Played by </p>
+    </div>
+</div>

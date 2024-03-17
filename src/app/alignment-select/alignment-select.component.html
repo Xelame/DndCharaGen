@@ -1,9 +1,7 @@
-<label for="alignment">Alignment : </label>
-<select formControlName="alignment">
-    <option>-</option>
+<label for="alignment" class="form-label">Alignment</label>
+<select id="alignment" class="form-select" formControlName="alignment">
+    <option [value]="">-</option>
     @for (alignment of alignments; track alignment.label) {
         <option [value]="alignment.label">{{ alignment.label }}</option>
     }
 </select>
-
-<p></p>

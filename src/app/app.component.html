@@ -1,3 +1,8 @@
-<app-base-info-form></app-base-info-form>
+@if (getVisibility()) {
+    <app-base-info-form></app-base-info-form>
+}
+@else {
+    <app-characteristic-form></app-characteristic-form>
+}
 
 <router-outlet />

@@ -12,6 +12,7 @@ export class AlignmentSelectComponent {
 
   public alignments : IAlignment[] = []
 
+
   constructor(private open5eService: Open5eService) { }
 
   ngOnInit() {
